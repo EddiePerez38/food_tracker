@@ -81,10 +81,12 @@
 			</div>
 
 			<div class="row t20">
+
+        {% for r in results %}
 				<div class="col-lg-3">
 					<div class="panel panel-warning">
 						<div class="panel-body text-bold">
-							<i class="glyphicon glyphicon-calendar"></i> December 14, 2017 
+							<i class="glyphicon glyphicon-calendar"></i> {{ r.entry_date }} 
 
 							<a class="btn btn-primary btn-xs pull-right" href="./view.html">
 								View <i class="glyphicon glyphicon-arrow-right"></i>
@@ -97,58 +99,8 @@
 							<li class="list-group-item text-bold"><span class="badge">955</span> Calories</li>
 						</ul>
 					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="panel panel-warning">
-						<div class="panel-body text-bold">
-							<i class="glyphicon glyphicon-calendar"></i> December 14, 2017 
-
-							<a class="btn btn-primary btn-xs pull-right" href="./view.html">
-								View <i class="glyphicon glyphicon-arrow-right"></i>
-							</a>
-						</div>
-						<ul class="list-group">
-							<li class="list-group-item text-bold"><span class="badge">60</span> Protein</li>
-							<li class="list-group-item text-bold"><span class="badge">49</span> Carbohydrate</li>
-							<li class="list-group-item text-bold"><span class="badge">55</span> Fat</li>
-							<li class="list-group-item text-bold"><span class="badge">955</span> Calories</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="panel panel-warning">
-						<div class="panel-body text-bold">
-							<i class="glyphicon glyphicon-calendar"></i> December 14, 2017 
-
-							<a class="btn btn-primary btn-xs pull-right" href="./view.html">
-								View <i class="glyphicon glyphicon-arrow-right"></i>
-							</a>
-						</div>
-						<ul class="list-group">
-							<li class="list-group-item text-bold"><span class="badge">60</span> Protein</li>
-							<li class="list-group-item text-bold"><span class="badge">49</span> Carbohydrate</li>
-							<li class="list-group-item text-bold"><span class="badge">55</span> Fat</li>
-							<li class="list-group-item text-bold"><span class="badge">955</span> Calories</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="panel panel-warning">
-						<div class="panel-body text-bold">
-							<i class="glyphicon glyphicon-calendar"></i> December 14, 2017 
-
-							<a class="btn btn-primary btn-xs pull-right" href="./view.html">
-								View <i class="glyphicon glyphicon-arrow-right"></i>
-							</a>
-						</div>
-						<ul class="list-group">
-							<li class="list-group-item text-bold"><span class="badge">60</span> Protein</li>
-							<li class="list-group-item text-bold"><span class="badge">49</span> Carbohydrate</li>
-							<li class="list-group-item text-bold"><span class="badge">55</span> Fat</li>
-							<li class="list-group-item text-bold"><span class="badge">955</span> Calories</li>
-						</ul>
-					</div>
-				</div>
+        </div>
+        {% endfor%}
 			</div>
 
 			<footer>
